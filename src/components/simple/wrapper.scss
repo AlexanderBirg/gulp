@@ -1,0 +1,18 @@
+.wrapper {
+  width: 1280px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  @include lg {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @include sm {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+}

@@ -1,0 +1,42 @@
+.accordion {
+  &__item {
+    margin-bottom: 10px;
+
+    &--active {
+      .accordion {
+        &__head {
+          background-color: #fff;
+        }
+
+        &__body {
+          max-height: 500px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    padding: 8px 20px 13px;
+    background-color: #f5f5fc;
+    cursor: pointer;
+    transition: ease $dur;
+  }
+
+  &__body {
+    max-height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #fff;
+    opacity: 0;
+    transition: ease $dur;
+
+    p {
+      margin-bottom: 14px;
+    }
+  }
+}

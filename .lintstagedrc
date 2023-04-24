@@ -1,5 +1,0 @@
-{
-  "src/**/*.scss": ["stylelint --color"],
-  "src/**/*.html": ["htmlhint"],
-  "src/**/*.js": ["eslint --color"]
-}
